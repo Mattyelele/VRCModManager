@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VRChat Mod Downloader", "VRChat Mod Downloader.csproj", "{572899DD-DF58-4489-80C9-BCFC9A8DAC30}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{572899DD-DF58-4489-80C9-BCFC9A8DAC30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{572899DD-DF58-4489-80C9-BCFC9A8DAC30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{572899DD-DF58-4489-80C9-BCFC9A8DAC30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{572899DD-DF58-4489-80C9-BCFC9A8DAC30}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0378A273-1496-4E6D-8B64-A5DCCA9F6242}
+	EndGlobalSection
+EndGlobal
