@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("VRChat Mod Downloader")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("VRChat Mod Manager")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
-[assembly: System.Reflection.AssemblyProductAttribute("VRChat Mod Downloader")]
-[assembly: System.Reflection.AssemblyTitleAttribute("VRChat Mod Downloader")]
+[assembly: System.Reflection.AssemblyProductAttribute("VRChat Mod Manager")]
+[assembly: System.Reflection.AssemblyTitleAttribute("VRChat Mod Manager")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 [assembly: System.Runtime.Versioning.TargetPlatformAttribute("Windows7.0")]
 [assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("Windows7.0")]
