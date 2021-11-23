@@ -1,0 +1,21 @@
+C:\Users\tekzl\source\repos\VRChat Mod Downloader\obj\Debug\net5.0-windows\VRChat Mod Downloader.csproj.AssemblyReference.cache
+C:\Users\tekzl\source\repos\VRChat Mod Downloader\obj\Debug\net5.0-windows\VRChat_Mod_Downloader.Form1.resources
+C:\Users\tekzl\source\repos\VRChat Mod Downloader\obj\Debug\net5.0-windows\VRChat Mod Downloader.csproj.GenerateResource.cache
+C:\Users\tekzl\source\repos\VRChat Mod Downloader\obj\Debug\net5.0-windows\VRChat Mod Downloader.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tekzl\source\repos\VRChat Mod Downloader\obj\Debug\net5.0-windows\VRChat Mod Downloader.AssemblyInfoInputs.cache
+C:\Users\tekzl\source\repos\VRChat Mod Downloader\obj\Debug\net5.0-windows\VRChat Mod Downloader.AssemblyInfo.cs
+C:\Users\tekzl\source\repos\VRChat Mod Downloader\obj\Debug\net5.0-windows\VRChat Mod Downloader.csproj.CoreCompileInputs.cache
+C:\Users\tekzl\source\repos\VRChat Mod Downloader\obj\Debug\net5.0-windows\VRChat Mod Downloader.genruntimeconfig.cache
+C:\Users\tekzl\source\repos\VRChat Mod Downloader\bin\Debug\net5.0-windows\Newtonsoft.Json.dll
+C:\Users\tekzl\source\repos\VRChat Mod Downloader\obj\Debug\net5.0-windows\VRChat Mod Downloader.csproj.CopyComplete
+C:\Users\tekzl\source\repos\VRChat Mod Downloader\bin\Debug\net5.0-windows\VRChat Mod Manager.exe
+C:\Users\tekzl\source\repos\VRChat Mod Downloader\bin\Debug\net5.0-windows\VRChat Mod Manager.deps.json
+C:\Users\tekzl\source\repos\VRChat Mod Downloader\bin\Debug\net5.0-windows\VRChat Mod Manager.runtimeconfig.json
+C:\Users\tekzl\source\repos\VRChat Mod Downloader\bin\Debug\net5.0-windows\VRChat Mod Manager.runtimeconfig.dev.json
+C:\Users\tekzl\source\repos\VRChat Mod Downloader\bin\Debug\net5.0-windows\VRChat Mod Manager.dll
+C:\Users\tekzl\source\repos\VRChat Mod Downloader\bin\Debug\net5.0-windows\ref\VRChat Mod Manager.dll
+C:\Users\tekzl\source\repos\VRChat Mod Downloader\bin\Debug\net5.0-windows\VRChat Mod Manager.pdb
+C:\Users\tekzl\source\repos\VRChat Mod Downloader\obj\Debug\net5.0-windows\VRChat_Mod_Downloader.Startup.resources
+C:\Users\tekzl\source\repos\VRChat Mod Downloader\obj\Debug\net5.0-windows\VRChat Mod Manager.dll
+C:\Users\tekzl\source\repos\VRChat Mod Downloader\obj\Debug\net5.0-windows\ref\VRChat Mod Manager.dll
+C:\Users\tekzl\source\repos\VRChat Mod Downloader\obj\Debug\net5.0-windows\VRChat Mod Manager.pdb

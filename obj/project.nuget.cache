@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "136fwlM3eC3nWttrojNRdTQFvCPJlH71tRzPby5xPl4YQQbCkaZN5mkK63AYBrX4OFZ7Gh9MWU4C1KCxOfMuuQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\tekzl\\source\\repos\\VRChat Mod Downloader\\VRChat Mod Downloader.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\tekzl\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

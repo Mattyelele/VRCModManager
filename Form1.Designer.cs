@@ -40,20 +40,24 @@ namespace VRChat_Mod_Downloader
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.steamvrstatus = new System.Windows.Forms.ToolStripStatusLabel();
             this.loadvrc = new System.Windows.Forms.Button();
-            this.steamvrrefresh = new System.Windows.Forms.Button();
             this.downloadprogress = new System.Windows.Forms.ProgressBar();
             this.vrtoggle = new System.Windows.Forms.CheckBox();
             this.melonloadertoggle = new System.Windows.Forms.CheckBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.themeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.vRChatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.melonLoaderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.installToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.uninstallToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.repairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.supportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fAQToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.websiteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.themeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.vRChatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.serversToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.checkForUpdatesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.disablemods = new System.Windows.Forms.CheckBox();
             this.tabControl1.SuspendLayout();
             this.installedmods.SuspendLayout();
             this.statusStrip1.SuspendLayout();
@@ -62,7 +66,7 @@ namespace VRChat_Mod_Downloader
             // 
             // downloadmodbutt
             // 
-            this.downloadmodbutt.Location = new System.Drawing.Point(12, 364);
+            this.downloadmodbutt.Location = new System.Drawing.Point(16, 367);
             this.downloadmodbutt.Name = "downloadmodbutt";
             this.downloadmodbutt.Size = new System.Drawing.Size(75, 23);
             this.downloadmodbutt.TabIndex = 0;
@@ -121,16 +125,17 @@ namespace VRChat_Mod_Downloader
             // 
             // panel1
             // 
-            this.panel1.Location = new System.Drawing.Point(6, 6);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(543, 247);
+            this.panel1.Size = new System.Drawing.Size(549, 253);
             this.panel1.TabIndex = 0;
             // 
             // statusStrip1
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.steamvrstatus});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 439);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 449);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(587, 22);
             this.statusStrip1.TabIndex = 5;
@@ -144,7 +149,7 @@ namespace VRChat_Mod_Downloader
             // 
             // loadvrc
             // 
-            this.loadvrc.Location = new System.Drawing.Point(466, 363);
+            this.loadvrc.Location = new System.Drawing.Point(97, 367);
             this.loadvrc.Name = "loadvrc";
             this.loadvrc.Size = new System.Drawing.Size(105, 23);
             this.loadvrc.TabIndex = 6;
@@ -152,19 +157,9 @@ namespace VRChat_Mod_Downloader
             this.loadvrc.UseVisualStyleBackColor = true;
             this.loadvrc.Click += new System.EventHandler(this.loadvrc_Click);
             // 
-            // steamvrrefresh
-            // 
-            this.steamvrrefresh.Location = new System.Drawing.Point(93, 364);
-            this.steamvrrefresh.Name = "steamvrrefresh";
-            this.steamvrrefresh.Size = new System.Drawing.Size(157, 23);
-            this.steamvrrefresh.TabIndex = 7;
-            this.steamvrrefresh.Text = "Refresh SteamVR Status";
-            this.steamvrrefresh.UseVisualStyleBackColor = true;
-            this.steamvrrefresh.Click += new System.EventHandler(this.steamvrrefresh_Click);
-            // 
             // downloadprogress
             // 
-            this.downloadprogress.Location = new System.Drawing.Point(12, 404);
+            this.downloadprogress.Location = new System.Drawing.Point(16, 417);
             this.downloadprogress.Name = "downloadprogress";
             this.downloadprogress.Size = new System.Drawing.Size(559, 23);
             this.downloadprogress.TabIndex = 8;
@@ -172,7 +167,7 @@ namespace VRChat_Mod_Downloader
             // vrtoggle
             // 
             this.vrtoggle.AutoSize = true;
-            this.vrtoggle.Location = new System.Drawing.Point(420, 367);
+            this.vrtoggle.Location = new System.Drawing.Point(208, 371);
             this.vrtoggle.Name = "vrtoggle";
             this.vrtoggle.Size = new System.Drawing.Size(40, 19);
             this.vrtoggle.TabIndex = 9;
@@ -182,11 +177,11 @@ namespace VRChat_Mod_Downloader
             // melonloadertoggle
             // 
             this.melonloadertoggle.AutoSize = true;
-            this.melonloadertoggle.Location = new System.Drawing.Point(318, 366);
+            this.melonloadertoggle.Location = new System.Drawing.Point(374, 370);
             this.melonloadertoggle.Name = "melonloadertoggle";
-            this.melonloadertoggle.Size = new System.Drawing.Size(96, 19);
+            this.melonloadertoggle.Size = new System.Drawing.Size(137, 19);
             this.melonloadertoggle.TabIndex = 10;
-            this.melonloadertoggle.Text = "MelonLoader";
+            this.melonloadertoggle.Text = "Disable MelonLoader";
             this.melonloadertoggle.UseVisualStyleBackColor = true;
             // 
             // menuStrip1
@@ -212,38 +207,10 @@ namespace VRChat_Mod_Downloader
             this.settingsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.themeToolStripMenuItem,
             this.vRChatToolStripMenuItem,
-            this.serversToolStripMenuItem});
+            this.melonLoaderToolStripMenuItem});
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
             this.settingsToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.settingsToolStripMenuItem.Text = "Settings";
-            // 
-            // helpToolStripMenuItem
-            // 
-            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.supportToolStripMenuItem,
-            this.fAQToolStripMenuItem,
-            this.websiteToolStripMenuItem});
-            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
-            this.helpToolStripMenuItem.Text = "Help";
-            // 
-            // supportToolStripMenuItem
-            // 
-            this.supportToolStripMenuItem.Name = "supportToolStripMenuItem";
-            this.supportToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.supportToolStripMenuItem.Text = "Support";
-            // 
-            // fAQToolStripMenuItem
-            // 
-            this.fAQToolStripMenuItem.Name = "fAQToolStripMenuItem";
-            this.fAQToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.fAQToolStripMenuItem.Text = "FAQ";
-            // 
-            // websiteToolStripMenuItem
-            // 
-            this.websiteToolStripMenuItem.Name = "websiteToolStripMenuItem";
-            this.websiteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.websiteToolStripMenuItem.Text = "Website";
             // 
             // themeToolStripMenuItem
             // 
@@ -256,22 +223,94 @@ namespace VRChat_Mod_Downloader
             this.vRChatToolStripMenuItem.Name = "vRChatToolStripMenuItem";
             this.vRChatToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
             this.vRChatToolStripMenuItem.Text = "VRChat Install folder";
+            this.vRChatToolStripMenuItem.Click += new System.EventHandler(this.vRChatToolStripMenuItem_Click);
             // 
-            // serversToolStripMenuItem
+            // melonLoaderToolStripMenuItem
             // 
-            this.serversToolStripMenuItem.Name = "serversToolStripMenuItem";
-            this.serversToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
-            this.serversToolStripMenuItem.Text = "Servers";
+            this.melonLoaderToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.installToolStripMenuItem,
+            this.uninstallToolStripMenuItem,
+            this.repairToolStripMenuItem});
+            this.melonLoaderToolStripMenuItem.Name = "melonLoaderToolStripMenuItem";
+            this.melonLoaderToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
+            this.melonLoaderToolStripMenuItem.Text = "MelonLoader";
+            // 
+            // installToolStripMenuItem
+            // 
+            this.installToolStripMenuItem.Name = "installToolStripMenuItem";
+            this.installToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
+            this.installToolStripMenuItem.Text = "Install";
+            this.installToolStripMenuItem.Click += new System.EventHandler(this.installToolStripMenuItem_Click);
+            // 
+            // uninstallToolStripMenuItem
+            // 
+            this.uninstallToolStripMenuItem.Name = "uninstallToolStripMenuItem";
+            this.uninstallToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
+            this.uninstallToolStripMenuItem.Text = "Uninstall";
+            this.uninstallToolStripMenuItem.Click += new System.EventHandler(this.uninstallToolStripMenuItem_Click);
+            // 
+            // repairToolStripMenuItem
+            // 
+            this.repairToolStripMenuItem.Name = "repairToolStripMenuItem";
+            this.repairToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
+            this.repairToolStripMenuItem.Text = "Repair";
+            this.repairToolStripMenuItem.Click += new System.EventHandler(this.repairToolStripMenuItem_Click);
+            // 
+            // helpToolStripMenuItem
+            // 
+            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.supportToolStripMenuItem,
+            this.fAQToolStripMenuItem,
+            this.websiteToolStripMenuItem,
+            this.checkForUpdatesToolStripMenuItem});
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem.Text = "Help";
+            // 
+            // supportToolStripMenuItem
+            // 
+            this.supportToolStripMenuItem.Name = "supportToolStripMenuItem";
+            this.supportToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
+            this.supportToolStripMenuItem.Text = "Support";
+            // 
+            // fAQToolStripMenuItem
+            // 
+            this.fAQToolStripMenuItem.Name = "fAQToolStripMenuItem";
+            this.fAQToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
+            this.fAQToolStripMenuItem.Text = "FAQ";
+            // 
+            // websiteToolStripMenuItem
+            // 
+            this.websiteToolStripMenuItem.Name = "websiteToolStripMenuItem";
+            this.websiteToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
+            this.websiteToolStripMenuItem.Text = "Website";
+            // 
+            // checkForUpdatesToolStripMenuItem
+            // 
+            this.checkForUpdatesToolStripMenuItem.Name = "checkForUpdatesToolStripMenuItem";
+            this.checkForUpdatesToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
+            this.checkForUpdatesToolStripMenuItem.Text = "Check For Updates";
+            // 
+            // disablemods
+            // 
+            this.disablemods.AutoSize = true;
+            this.disablemods.Location = new System.Drawing.Point(254, 370);
+            this.disablemods.Name = "disablemods";
+            this.disablemods.Size = new System.Drawing.Size(114, 19);
+            this.disablemods.TabIndex = 12;
+            this.disablemods.Text = "Disable All Mods";
+            this.disablemods.UseVisualStyleBackColor = true;
+            this.disablemods.CheckedChanged += new System.EventHandler(this.disablemods_CheckedChanged);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(587, 461);
+            this.ClientSize = new System.Drawing.Size(587, 471);
+            this.Controls.Add(this.disablemods);
             this.Controls.Add(this.melonloadertoggle);
             this.Controls.Add(this.vrtoggle);
             this.Controls.Add(this.downloadprogress);
-            this.Controls.Add(this.steamvrrefresh);
             this.Controls.Add(this.loadvrc);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
@@ -308,10 +347,8 @@ namespace VRChat_Mod_Downloader
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel steamvrstatus;
         private System.Windows.Forms.Button loadvrc;
-        private System.Windows.Forms.Button steamvrrefresh;
         private System.Windows.Forms.ProgressBar downloadprogress;
         private System.Windows.Forms.CheckBox vrtoggle;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.CheckBox melonloadertoggle;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
@@ -322,7 +359,13 @@ namespace VRChat_Mod_Downloader
         private System.Windows.Forms.ToolStripMenuItem websiteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem themeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem vRChatToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem serversToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem melonLoaderToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem installToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem uninstallToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem repairToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem checkForUpdatesToolStripMenuItem;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.CheckBox disablemods;
     }
 }
 
